@@ -1,7 +1,5 @@
 # auto-clicker
 
-# Admin-Finder
-
 * #### Linux
        git clone https://github.com/hereioz/Admin-Finder.git
        cd Admin-Finder
