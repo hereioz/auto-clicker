@@ -1,9 +1,9 @@
 # auto-clicker
 
 * #### Linux
-       git clone https://github.com/hereioz/Admin-Finder.git
-       cd Admin-Finder
+       git clone https://github.com/hereioz/auto-clicker.git
+       cd auto-clicker
        pip3 install -r requirements.txt
-       chmod +x AdminFinder.py
-       python3 AdminFinder.py
+       chmod +x __main__.py
+       python3 __main__.py
 
