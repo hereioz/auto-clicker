@@ -1,0 +1,4 @@
+start_stop_key=r
+exit_key=x
+button=Button.right
+delay=0.05
