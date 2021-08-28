@@ -113,6 +113,10 @@ def main():
     button_click = IntVar()
     main_window.protocol("WM_DELETE_WINDOW", other_command().kill_process)
 
+    c = Canvas(main_window, bg="gray16",height=1000,width=600)
+    filename = PhotoImage(file="//root//Downloads//photo-1538481199705-c710c4e965fc.png")
+    background_layer = Label(main_window, image=filename)
+    background_layer.place(x=0, y=0, relwidth=1, relheight=1)
     current_key_stroke_listener = tkinter.Label(main_window, text=f"YOUR CURRENT KEYSTROKE: {str(start_stop_key).upper()}",fg="white", bg="black", font=("1"))
     current_key_stroke_listener.place(x=75,y=300)
 
@@ -126,6 +130,7 @@ def main():
     key_stroke_record.place(x=205, y=343)
 
     DELAY_label = tkinter.Label(main_window, text="DELAY", font=("1"), fg="white", bg="black")
+    DELAY_label.config(background="#87CEFA")
     DELAY_label.place(x=5, y=50)
 
     DELAY_entry = tkinter.Entry(main_window,width=10)
