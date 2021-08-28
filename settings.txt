@@ -1,4 +1,4 @@
 start_stop_key=r
-exit_key=TAB
+exit_key=f11
 button=Button.right
 delay=0.05
