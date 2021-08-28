@@ -6,9 +6,9 @@ import GUI
 
 delay = float(GUI.delay)
 
-if (GUI.button.strip() == "Button.left"):
+if (str(GUI.button.strip()) == "Button.left"):
     button = Button.left
-elif (GUI.button.strip() == "Button.right"):
+elif (str(GUI.button.strip()) == "Button.right"):
     button = Button.right
 
 class ClickMouse(threading.Thread):
