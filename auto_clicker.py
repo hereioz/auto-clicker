@@ -54,7 +54,7 @@ def main():
                 click_thread.stop_clicking()
             else:
                 click_thread.start_clicking()
-        elif key == GUI.exit_key:
+        elif str(KEY) == str(GUI.exit_key).strip() or str(KEY) == str(GUI.exit_key).strip().upper():
             GUI.listener_command().if_listener_stop()
             click_thread.exit()
             listener.stop()
