@@ -15,6 +15,10 @@ class ClickMouse(threading.Thread):
     def __init__(self, delay, button):
         super(ClickMouse, self).__init__()
         self.delay = delay
+        if (str(GUI.button).strip() == "Button.left"):
+            button = Button.left
+        elif (str(GUI.button).strip() == "Button.right"):
+            button = Button.right
         self.button = button
         self.running = False
         self.program_running = True
@@ -58,6 +62,7 @@ def main():
             GUI.listener_command().if_listener_stop()
             click_thread.exit()
             listener.stop()
+            exit(0)
 
 
     with Listener(on_press=on_press) as listener:
